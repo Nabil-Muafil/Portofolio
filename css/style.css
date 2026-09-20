@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+  font-family: "Macondo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.wrapper {
+    width: 1024px;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+}
+
+/* menu */
+
+nav {
+    background-color: #222831;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+nav > .wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.menu {
+    width: 50%;
+}
+
+.menu > ul {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+.menu > ul > li > a {
+    text-decoration: none;
+    color: #fff
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo > img {
+    height: 50px;
+}
+
+/* jumbotron */
+header {
+    background: url("../img/bg-header.jpg");
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 5px;
+    text-shadow: 0 0 4px #000;
+}
+
+.header-opacity {
+    background-color: #222831;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.header-jumbotron {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-jumbotron > h4 {
+    color: #fff;
+    font-size: 3rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-jumbotron > p {
+    color: #fff;
+    font-size: 1.2rem;
+    margin: -20px 0px 20px 0px;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.button {
+    background-color:bisque;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.button-xl {
+    font-size: 1.3rem;
+    padding: 10px 30px;
+    color: #222831;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #ffd180; 
+    color: #000000;
+    transform: translateY(-3px); /* Tombol sedikit terangkat */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* statistic */
+#statistic {
+    background-color: #393e46;
+    color: #fff;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#statistic > .wrapper {
+    padding: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#statistic > .wrapper > div {
+    text-align: center;
+}
+
+#statistic > .wrapper > div > p {
+    font-size: 3rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+#statistic > .wrapper > div > p > i {
+    margin-right: 10px;
+    font-size: 3rem;
+}
+
+#statistic > .wrapper > div > small {
+    font-size: 1.3rem;
+}
+
+/* projects */
+#projects {
+    background-color: #222831;
+    color: #fff;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#projects > .wrapper > h4 {
+    font-size: 2.5rem;
+    margin: -20px;
+    padding: 10px;
+    text-align: center;
+}
+
+#projects > .wrapper > h4 > span {
+    color: bisque;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 50px;
+    margin: 40px;
+}
+
+.grid > .item {
+    border: 1px solid #666;
+    background-color: #393e46;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.grid > .item > i {
+    font-size: 3rem;
+    margin: 0% 80% 0% 80%;
+}
+
+.grid > .item > h2 {
+    text-align: center;
+    margin: 0px;
+    margin-left: -80px;
+    padding: 0px;
+    font-size: 2rem;
+}
+
+.grid > .item > p {
+    text-align: center;
+    margin-top: -40px;
+    margin-left: -80px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.btn-container {
+    text-align: center;
+    margin-left: -80px;
+}
+
+.btn-check {
+    display: inline-block;
+    color: #000; 
+    background-color: #ffe0b2; 
+    padding: 10px 24px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-check:hover {
+    background-color: #ffd180;
+    transform: translateY(-3px);
+}
+
+.button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+
+
