@@ -7,11 +7,16 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px; 
 }
 
 html, body {
     width: 100%;
-    overflow-x: hidden; /* Mencegah layar bisa di-scroll kesamping kalau ada elemen bocor */
+}
+
+.main-container {
+    width: 100%;
+    overflow-x: hidden; /* Mencegah scroll horizontal */
 }
 
 body {
